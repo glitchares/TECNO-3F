@@ -81,3 +81,5 @@ else if(numeroMayor1 > numeroMayor2 && numeroMayor3){
 else if(numeroMayor1 > numeroMayor2 && numeroMayor3){
     console.log("Numero mayor: ", numeroMayor1 )
 }
+
+//faltan ; nose si verif de rango y el último num mayor v2y v3 y si hace falta int(), carpeta modulos y/n
