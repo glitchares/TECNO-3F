@@ -4,7 +4,7 @@ const prompt = promptSync()
 // ARES MIA 48296494
 
 // Clasificación de Número Entero (1)
-/*let numeroEntero = Number(prompt("Insertá un número entero: "))
+let numeroEntero = Number(prompt("Insertá un número entero: "))
 
 if (numeroEntero > 0){
     console.log("Positivo")
@@ -13,8 +13,8 @@ if (numeroEntero > 0){
 } else {
     console.log("Cero")
 }
-*/
-/*
+
+
 // Determinar Tipo de Triángulo (2)
 let longitudA = Number(prompt("Longitud de lado A del triángulo: "));
 let longitudB = Number(prompt("Longitud de lado B lado del triángulo: "));
@@ -28,7 +28,7 @@ if (longitudA == longitudB == longitudC){
     console.log("Isósceles");
 }
 
-/*
+
 // Clasificación de edad (3)
 let edad = Number(prompt("Insertá tu edad: "));
 
@@ -44,7 +44,6 @@ if(edad < 12){
 
 
 // Determinar si un número es Par o Impar (4)
-
 let numeroParidad = Number(prompt("Insertá un número a determinar su paridad: "));
 
 if(numeroParidad % 2 == 0){
@@ -52,9 +51,8 @@ if(numeroParidad % 2 == 0){
 } else {
     console.log("Es impar");
 } 
-*/
+
 // Cálculo de notas (5)
-/*
 let calificacion = Number(prompt("Insertá tu nota: "));
 
 if(calificacion > 89){
@@ -68,8 +66,8 @@ if(calificacion > 89){
 } else{
     console.log("F");
 }
-*/
-/*
+
+
 // Número Mayor entre 2 (6)
 let numero1= Number(prompt("Insertá un número: "));
 let numero2= Number(prompt("Insertá un segundo número: "));
@@ -83,33 +81,42 @@ else if(numero1 > numero2){
 else{
     console.log("Número mayor: ", numero2);
 }
-*/
 
+
+// Número Mayor entre 3 (6)
 let primerNumero = Number(prompt("Insertá un número: "));
 let segundoNumero = Number(prompt("Insertá un segundo número: "));
-let tercerNumero= Number(prompt("Insertá un tercer número: "));
+let tercerNumero = Number(prompt("Insertá un tercer número: "));
 
 // En caso de que no hubiera que indicar que alguno de los tres números coincide:
+console.log("Número mayor: ", Math.max(primerNumero, segundoNumero, tercerNumero))
 
-//console.log("Número mayor: ", Math.max(primerNumero, segundoNumero, tercerNumero))
-
-// Si alguno de los números coincide entre sí: 
+// Si algún número coincide entre sí:
 
 let mayor = primerNumero;
-if (segundoNumero > mayor){
+
+if (segundoNumero > mayor) {
     mayor = segundoNumero;
-} 
-
-if (tercerNumero > mayor){
+}
+if (tercerNumero  > mayor) {
     mayor = tercerNumero;
-} 
-
-let numerosRepetidos = 0;
-
-if (primerNumero === mayor){
-    repetidos++;
 }
 
-if (nu)
+if (primerNumero === segundoNumero && segundoNumero === tercerNumero ) {
+    console.log("Los tres números son iguales: ", primerNumero);
+} else {
+
+    if (primerNumero === segundoNumero){
+        console.log("El primero y el segundo son iguales: ", primerNumero);
+    }
+    if (primerNumero === tercerNumero ) {
+        console.log("El primero y el tercero son iguales: ", segundoNumero);
+    }
+    if (segundoNumero === tercerNumero ) {
+        console.log("El segundo y el tercero son iguales: ", tercerNumero);
+    }
+    console.log("Número mayor: ", mayor);
+}
+//agregar commentario clssrom
 
 //faltan ; nose si verif de rango y el último num mayor v2y v3 y si hace falta int(), carpeta modulos y/n
