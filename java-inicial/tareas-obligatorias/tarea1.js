@@ -4,14 +4,14 @@ const prompt = promptSync()
 // ARES MIA 48296494
 
 // Clasificación de Número Entero (1)
-let numeroEntero = Number(prompt("Insertá un número entero: "))
+let numeroEntero = Number(prompt("Insertá un número entero: "));
 
 if (numeroEntero > 0){
-    console.log("Positivo")
+    console.log("Positivo");
 } else if (numeroEntero < 0){
-    console.log("Negativo")
+    console.log("Negativo");
 } else {
-    console.log("Cero")
+    console.log("Cero");
 }
 
 
@@ -20,7 +20,7 @@ let longitudA = Number(prompt("Longitud de lado A del triángulo: "));
 let longitudB = Number(prompt("Longitud de lado B lado del triángulo: "));
 let longitudC = Number(prompt("Longitud de lado C del triángulo: "));
 
-if (longitudA == longitudB == longitudC){
+if (longitudA === longitudB && longitudB === longitudC){
     console.log("Equilátero");
 } else if (longitudA !== longitudB && longitudB !== longitudC && longitudA !== longitudC){
     console.log("Escaleno");
@@ -88,10 +88,10 @@ let primerNumero = Number(prompt("Insertá un número: "));
 let segundoNumero = Number(prompt("Insertá un segundo número: "));
 let tercerNumero = Number(prompt("Insertá un tercer número: "));
 
-// En caso de que no hubiera que indicar que alguno de los tres números coincide:
+// En caso de que no hubiera que indicar que alguno de los tres números coincide (opción 1):
 console.log("Número mayor: ", Math.max(primerNumero, segundoNumero, tercerNumero))
 
-// Si algún número coincide entre sí:
+// Si algún número coincide entre sí (opción 2):
 
 let mayor = primerNumero;
 
@@ -110,13 +110,11 @@ if (primerNumero === segundoNumero && segundoNumero === tercerNumero ) {
         console.log("El primero y el segundo son iguales: ", primerNumero);
     }
     if (primerNumero === tercerNumero ) {
-        console.log("El primero y el tercero son iguales: ", segundoNumero);
+        console.log("El primero y el tercero son iguales: ", primerNumero);
     }
     if (segundoNumero === tercerNumero ) {
         console.log("El segundo y el tercero son iguales: ", tercerNumero);
     }
     console.log("Número mayor: ", mayor);
 }
-//agregar commentario clssrom
 
-//faltan ; nose si verif de rango y el último num mayor v2y v3 y si hace falta int(), carpeta modulos y/n
