@@ -117,4 +117,9 @@ if (primerNumero === segundoNumero && segundoNumero === tercerNumero ) {
     }
     console.log("Número mayor: ", mayor);
 }
+<<<<<<< HEAD
+=======
+//agregar commentario clssrom
+//git ignore, tareas opc
+>>>>>>> b32c240e45c0201d736ce623b7f78ad76235e4c5
 
