@@ -1,7 +1,9 @@
 import promptSync from "prompt-sync"
 const prompt = promptSync()
 
-/*// Clasificación de Número Entero (1)
+// ARES MIA 48296494
+
+// Clasificación de Número Entero (1)
 let numeroEntero = prompt("Insertá un número entero: ")
 
 if (numeroEntero > 0){
@@ -49,7 +51,6 @@ if (numeroParidad % 2 == 0){
     console.log("Es impar")
 } 
 
-/*
 // Cálculo de notas (5)
 
 let calificacion = Number(prompt("Insertá tu calificación: ")) 
@@ -65,8 +66,7 @@ if(calificacion > 89){
 } else{
     console.log("F")
 }
-    */
-
+    
 // Número Mayor (6)
 let numeroMayor1= prompt("Insertá un número: ")
 let numeroMayor2= prompt("Insetá un segundo número: ")
