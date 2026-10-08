@@ -1,5 +1,4 @@
 import promptSync from "prompt-sync"
-
 const prompt = promptSync()
 
 // ARES MIA 48296494
@@ -88,7 +87,29 @@ else{
 
 let primerNumero = Number(prompt("Insertá un número: "));
 let segundoNumero = Number(prompt("Insertá un segundo número: "));
-let TercerNumero= Number(prompt("Insertá un tercer número: "));
+let tercerNumero= Number(prompt("Insertá un tercer número: "));
 
+// En caso de que no hubiera que indicar que alguno de los tres números coincide:
+
+//console.log("Número mayor: ", Math.max(primerNumero, segundoNumero, tercerNumero))
+
+// Si alguno de los números coincide entre sí: 
+
+let mayor = primerNumero;
+if (segundoNumero > mayor){
+    mayor = segundoNumero;
+} 
+
+if (tercerNumero > mayor){
+    mayor = tercerNumero;
+} 
+
+let numerosRepetidos = 0;
+
+if (primerNumero === mayor){
+    repetidos++;
+}
+
+if (nu)
 
 //faltan ; nose si verif de rango y el último num mayor v2y v3 y si hace falta int(), carpeta modulos y/n
