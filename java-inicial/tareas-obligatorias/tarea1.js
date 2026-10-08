@@ -118,5 +118,6 @@ if (primerNumero === segundoNumero && segundoNumero === tercerNumero ) {
     console.log("Número mayor: ", mayor);
 }
 //agregar commentario clssrom
+//git ignore, tareas opc
 
 //faltan ; nose si verif de rango y el último num mayor v2y v3 y si hace falta int(), carpeta modulos y/n
