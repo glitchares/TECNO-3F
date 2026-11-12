@@ -17,7 +17,7 @@ if (numeroEntero > 0){
 
 // Determinar Tipo de Triángulo (2)
 let longitudA = Number(prompt("Longitud de lado A del triángulo: "));
-let longitudB = Number(prompt("Longitud de lado B lado del triángulo: "));
+let longitudB = Number(prompt("Longitud de lado B del triángulo: "));
 let longitudC = Number(prompt("Longitud de lado C del triángulo: "));
 
 if (longitudA === longitudB && longitudB === longitudC){
@@ -51,6 +51,7 @@ if(numeroParidad % 2 == 0){
 } else {
     console.log("Es impar");
 } 
+
 
 // Cálculo de notas (5)
 let calificacion = Number(prompt("Insertá tu nota: "));
@@ -116,6 +117,6 @@ if (primerNumero === segundoNumero && segundoNumero === tercerNumero ) {
         console.log("El segundo y el tercero son iguales: ", tercerNumero);
     }
     console.log("Número mayor: ", mayor);
-}
 
+}
 
