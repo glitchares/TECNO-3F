@@ -11,56 +11,51 @@ for (let i = 0; i < frutas.length; i++) {
 
 
 //Ejercicio 2
-//hace falta en variable?
 frutas.push("kiwi")
 frutas.unshift("sandía")
 frutas.pop()
 frutas.shift()
 console.log(frutas)
 
-//Ejercicio 3
-//agregale int
-const numeros = [10, 20, 30, 40, 50]
-numero = Number(prompt("Ingresá un número: "))
 
-if numeros.includes(numero){
+//Ejercicio 3
+const numeros = [10, 20, 30, 40, 50];
+const numero = parseInt(prompt("Ingresá un número: "))
+
+if (numeros.includes(numero)){
     console.log("Tu número se encuentra en el arreglo.")     
 } else{
     console.log ("Tu número no se encuentra en el arreglo.")
 }
 
-//Ejercicio 4
-//contador de cuantas veces aparece el 2.
-//fstring en js?
 
-numeros = [1, 2, 3, 2, 4, 2, 5]
+//Ejercicio 4
+const numeros = [1, 2, 3, 2, 4, 2, 5]
 
 let contador =  0;
 
-for (let i = 0; numeros.length; i++){
+for (let i = 0; i < numeros.length; i++){
     if (numeros[i] == 2){
         contador++;    
     }
 }
 console.log(`El dos se repite: ${contador} veces en el arreglo.`)
 
+
 //Ejercicio 5
-//
 numeros = [5, 12, 8, 20, 3, 15]
 
 let newArray = []
-for(numero[i] > 10){
-    newArray.join(numero[i])
+for(numero of numeros){
+    newArray.unshift(numeros[i])
 }
 console.log(newArray)
 
 
 
 //Ejercicio 6
-//recorrerlo al revez
-// y guardarlos con un bluce for trad
 
-let nombres = ["Mia", "Paula", "Ambar", "Marcos"];
+let nombres = ["Mia", "Paula", "Ambar", "Marcos"]
 
 //opción de nuevo array
 let nombresReverso = []
@@ -93,7 +88,7 @@ const numeros = [
     [1000, 0, 88],
     [-13, 89, 67]
 ]
-sumaTotal = []
+sumaTotal = 0
 
 for (let fila = 0; fila < numeros.length; fila++) {
     for (let col = 0; col < numeros [fila].length; col++){
@@ -111,7 +106,7 @@ const oceano = [
 
 for (let fila = 0; fila < oceano.length; fila++) {
     for (let col = 0; col < oceano[fila].length; col++){
-        if(numeros[fila][columna] === "B"){
+        if(oceano[fila][columna] === "B"){
             console.log (`El barco está en la posición: ${[(fila)][(columna)]}`)
             break
         } 
