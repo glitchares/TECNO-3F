@@ -3,60 +3,92 @@ const prompt = promptSync()
 
 // ARES MIA 48296494
 
-/*const calculadora = [
-    {1: sumar()},
-    {2: restar()},
-    {3: multiplicar()},
-    {4: dividir()},
-    {5: potencia()},
-    {6: raiz()},
-    {7: salir()},
-]
-*/
+const calculadora = {
+    numero1: 0,
+    numero2: 0,
+
+    sumar() {
+        this.numero1 = parseFloat(prompt("Ingrese un número: "))
+        this.numero2 = parseFloat(prompt("Ingrese otro número más: "))
+        return this.numero1 + this.numero2
+    },
+
+    restar() {
+        this.numero1 = parseFloat(prompt("Ingrese un número: "))
+        this.numero2 = parseFloat(prompt("Ingrese otro número más: "))
+        return this.numero1 - this.numero2 
+    },
+
+    multiplicar() {
+        this.numero1 = parseFloat(prompt("Ingrese un número: "))
+        this.numero2 = parseFloat(prompt("Ingrese otro número más: "))
+        return this.numero1 * this.numero2 
+    },
+    
+    dividir(){
+        this.numero1 = parseFloat(prompt("Ingrese un número: "))
+        while (numero2 == 0 ){ //cambialo
+            this.numero2 = parseFloat(prompt("Ingrese otro número más: "))
+        }
+        return numero1 / numero2
+    },
+
+    potencia(){
+
+    },
+
+    raiz(){
+    
+    }
 
 
-//pero se pedian metodos no funciones, creo
 
+    restar: restar,
+    multiplicar: multiplicar,
+    dividir: dividir,
+    potencia: potencia,
+    menu: menu
+};
+
+menu
+switch()
 
 
 function sumar(){
     let numero1 = parseInt(prompt("Ingrese un número: "))
     let numero2 = parseInt(prompt("Ingrese un número más: ")) 
-
-    return(console.log(numero1 + numero2))
+    return(numero1 + numero2)
 }
 
 function restar(){
     let numero1 = parseInt(prompt("Ingrese un número: "))
     let numero2 = parseInt(prompt("Ingrese un número más: "))
-
-    return(console.log(numero1 - numero2))
+    return(numero1 - numero2)
 }
 
 function multiplicar(){
     let numero1 = parseInt(prompt("Ingrese un número: "))
     let numero2 = parseInt(prompt("Ingrese un número más: ")) 
-    return(console.log(numero1 * numero2))
+    return(numero1 * numero2)
 }
 function dividir(){
     let numero1 = parseInt(prompt("Ingrese un número: "))
     let numero2 = parseInt(prompt("Ingrese un número más: "))
-
     return(numero1 / numero2 )
 }
 
 function raiz(){
     let numero1 = parseInt(prompt("Ingrese un número: "))
     let numero2 = parseInt(prompt("Ingrese un número más: ")) 
-
     return()
 
 
-def salir():
+function salir(){
     setTimeout(3)
+}
 
 
-
+//no funciones separadas
 
 2 numeros
 
