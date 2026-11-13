@@ -30,64 +30,87 @@ const calculadora = {
         this.numero2 = parseFloat(prompt("Ingrese otro número más: "))
 
         while (this.numero2 == 0 ){ 
+            console.log("No podés dividir por 0!")
             this.numero2 = parseFloat(prompt("Ingrese otro número más: "))
-        } // while True verif logic? // while numero2 is 0, keep asking for a n > 1
-        //while numero2 is not 0 stop asking for a n > 1
-        // 
+        } 
         return this.numero1 / this.numero2
     },
 
     potencia(){
         this.numero1 = parseFloat(prompt("Ingrese un número: "))
-        return this.numero1 * this.numero
-
+        this.numero2 = parseFloat(prompt("Ingrese otro número más: "))
+        return Math.pow(this.numero1 , this.numero2)
     },
 
     raiz(){
         this.numero1 = parseFloat(prompt("Ingrese un número: "))
-        return Math.sqrt(this.numero1) 
+        this.numero2 = parseFloat(prompt("Ingrese el índice: "))
+
+        while (this.numero2 == 0 ){ 
+            console.log("El subíndice no puede ser 0!")
+            this.numero2 = parseFloat(prompt("Ingrese otro número más: "))
+        }
+        return this.numero1 ** (1 / this.numero2)
     },
 
     menu() {
-        let opcion = 0 
 
-        while (opcion != 7) {
-            console.log("1. Sumar")
-            console.log("2. Restar")
-            console.log("3. Multiplicar")
-            console.log("4. Dividir ")
-            console.log("5. Potencia de 2")
-            console.log("6. Raíz cuadrada")
-            console.log("7. Salir")
+        console.log("Calculadora")
+        
+        console.log("1. Sumar")
+        console.log("2. Restar")
+        console.log("3. Multiplicar")
+        console.log("4. Dividir ")
+        console.log("5. Potencia")
+        console.log("6. Raíz")
+        console.log("7. Salir")
 
-            opcion = parseInt(prompt("Elegí una opción"))
+        const opcion = parseInt(prompt("Elegí una opción: ")) 
 
-            switch (opcion) {
-                case 1:
-                    console.log("Resultado:", this.sumar())
-                case 2:
-                    console.log("Resultado:", this.restar())
-                case 3:
-                    console.log("Resultado:", this.multiplicar())
-                case 4:
-                    console.log("Resultado:", this.dividir())
-                case 5:
-                    console.log("Resultado:", this.potencia())
-                case 6:
-                    console.log("Resultado:", this.raiz())
-                case 7:
-                    console.log("Saliendo del menú")
-                    break
-                default:
-                    console.log("Ingresá una opción válida")
+        switch(opcion) {
+            case 1:
+                console.log("Resultado:", this.sumar())    
+                break
+            case 2:
+                console.log("Resultado:", this.restar())
+                break
+            case 3:
+                console.log("Resultado:", this.multiplicar())
+                break
+            case 4:
+                console.log("Resultado:", this.dividir())
+                break
+            case 5:
+                console.log("Resultado:", this.potencia())
+                break
+            case 6:
+                console.log("Resultado:", this.raiz())    
+                break
+            case 7:
+                console.log("Saliendo del menú...")
+                break
+                
+            default:
+                console.log("Ingresá una opción válida")
+            }
+
+            if(opcion != 7){
+                setTimeout(() => this.menu(), 3000)
             }
         }
     }
-}
 
 calculadora.menu()
 
+
+
 /*
+
+
+// while True verif logic? // while numero2 is 0, keep asking for a n > 1
+        //while numero2 is not 0 stop asking for a n > 1
+        // 
+
 switch(opcion) {
     case 1:
         console.log()
