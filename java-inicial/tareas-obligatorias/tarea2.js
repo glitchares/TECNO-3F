@@ -4,8 +4,7 @@ const prompt = promptSync()
 // ARES MIA 48296494
 
 //Ejercicio 1
-//imprimir indice y valor
-let frutas =  ["manzana", "banana", "pera", "naranja"];
+const frutas =  ["manzana", "banana", "pera", "naranja"];
 for (let i = 0; i < frutas.length; i++) {
     console.log(i, frutas[i])
 }
@@ -18,15 +17,15 @@ frutas.unshift("sandía")
 frutas.pop()
 frutas.shift()
 console.log(frutas)
-/*
+
 //Ejercicio 3
 //agregale int
-numeros = [10, 20, 30, 40, 50]
+const numeros = [10, 20, 30, 40, 50]
 numero = Number(prompt("Ingresá un número: "))
 
 if numeros.includes(numero){
     console.log("Tu número se encuentra en el arreglo.")     
-}else{
+} else{
     console.log ("Tu número no se encuentra en el arreglo.")
 }
 
@@ -94,10 +93,14 @@ const numeros = [
     [1000, 0, 88],
     [-13, 89, 67]
 ]
-.concatenate(numeros)
-for numero in numeros 
-0 + numero [i]
+sumaTotal = []
 
+for (let fila = 0; fila < numeros.length; fila++) {
+    for (let col = 0; col < numeros [fila].length; col++){
+        let sumaTotal = sumaTotal + numeros[fila][columna] 
+    }
+}
+console.log(`Suma total: ${sumaTotal}`)
 
 //Ejercicio 9
 const oceano = [
@@ -106,7 +109,18 @@ const oceano = [
     ["~", "~", "~"],
 ];
 
-en los 3 x cada array merge? y buscar?
-.find("B")
+for (let fila = 0; fila < oceano.length; fila++) {
+    for (let col = 0; col < oceano[fila].length; col++){
+        if(numeros[fila][columna] === "B"){
+            console.log (`El barco está en la posición: ${[(fila)][(columna)]}`)
+            break
+        } 
+    }
+}
 
-*/
+
+
+
+
+
+
