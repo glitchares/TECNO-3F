@@ -47,7 +47,7 @@ console.log(`El dos se repite: ${contador} veces en el arreglo.`)
 numeros = [5, 12, 8, 20, 3, 15]
 
 let newArray = []
-for(numero of numeros){
+for(const = numero of numeros){
     newArray.unshift(numeros[i])
 }
 console.log(newArray)
