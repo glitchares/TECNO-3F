@@ -66,7 +66,7 @@ for(let i = nombres.length - 1 ; i >= 0; i--){
     nombresAlRevez.push(nombres[i]);
 }
 
-console.log(nombresAlRevez)
+console.log(nombresAlRevez);
 
 //opción de modificar el original
 
